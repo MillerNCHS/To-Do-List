@@ -7,17 +7,15 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "Homework = []\n" +
-    "week = (&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;)\n" +
-    "for day in week:\n" +
-    "    task = &quot;&quot;\n" +
-    "    while task != &quot;done&quot;:\n" +
-    "        task = input(&quot;Enter Homework for Today (done) when finished&quot;)\n" +
-    "        Homework.append(day+&quot; - &quot;+task)\n" +
-    "    for todo in Homework:\n" +
-    "        print(todo)\n" +
-    "print(&quot;Homework for the last week&quot;)\n" +
-    "print(Homework)";
+  var initial = "todo = [&quot;clean basement&quot;, &quot;change oil in truck&quot;,&quot;wax skis &amp; board&quot;,&quot;buy christmas gift&quot;]\n" +
+    "moretasks = &quot;&quot;\n" +
+    "while (moretasks != &quot;done&quot;):\n" +
+    "    moretasks = input(&quot;What is another task to add to you todo list (done to stop)&quot;)\n" +
+    "    todo.append(moretasks)\n" +
+    "    \n" +
+    "print(&quot;Your todo list for the weekend is:&quot;)\n" +
+    "for task in todo:\n" +
+    "    print (task)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
